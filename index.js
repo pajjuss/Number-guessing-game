@@ -7,7 +7,7 @@ let chancesTxt = document.getElementById("chancesTxt");
 let randomNumber = Math.floor(Math.random() * 10) + 1;
 
 let number;
-let Chances = 3;
+let Chances = 5;
 chancesTxt.innerHTML = "Chances:- " + Chances;
 console.log(randomNumber);
 
@@ -17,7 +17,7 @@ btn.addEventListener("click", (e) => {
   Chances--;
   chancesTxt.innerHTML = "Chances:- " + Chances;
   if (Chances == 0) {
-    activateBox("Loss");
+    activateBox("Lost");
   }
   number = num.value;
   checkNum(number);
